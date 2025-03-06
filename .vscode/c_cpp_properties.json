@@ -3,8 +3,7 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**",
-                "${workspaceFolder}/1/WindowsGDI/inc"
+                "${workspaceFolder}/1/proj/windows/ExampleGDI/inc"
             ],
             "defines": [
                 "_DEBUG"

@@ -9,6 +9,6 @@ public final class MainActivity extends AppCompatActivity
     protected final void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(new CustomGraphicsView(this));
+        super.setContentView(new CustomGraphicsView(this));
     }
 }

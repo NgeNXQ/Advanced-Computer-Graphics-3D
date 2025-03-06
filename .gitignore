@@ -8,3 +8,10 @@ cache/
 .vs/
 *.vcxproj.user
 *.vcxproj.filters
+
+# Android Studio
+
+.idea/
+.gradle/
+
+local.properties

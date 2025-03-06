@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/1/WindowsGDI/inc"
+            ],
+            "defines": [
+                "_DEBUG"
+            ],
+            "compilerPath": "D:\\Programs\\Visual Studio\\Community 2022\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\cl.exe",
+            "cStandard": "c23",
+            "cppStandard": "c++23",
+            "windowsSdkVersion": "10.0.22621.0"
+        }
+    ],
+    "version": 4
+}

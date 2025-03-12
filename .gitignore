@@ -9,9 +9,12 @@ cache/
 *.vcxproj.user
 *.vcxproj.filters
 
+# Visual Studio Code
+
+.vscode/
+
 # Android Studio
 
 .idea/
 .gradle/
-
 local.properties

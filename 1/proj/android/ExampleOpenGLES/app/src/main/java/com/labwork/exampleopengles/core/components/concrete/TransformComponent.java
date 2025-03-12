@@ -8,6 +8,9 @@ import com.labwork.exampleopengles.core.components.common.Component;
 
 public final class TransformComponent extends Component {
 
+    private static final int MATRIX_OUTPUT_DIMENSIONS_COUNT = 16;
+    private static final int MATRIX_INTERMEDIATE_DIMENSIONS_COUNT = 4;
+
     private static final float[] MATRIX_VECTOR_UP = { 0.0f, 1.0f, 0.0f, 0.0f };
     private static final float[] MATRIX_VECTOR_RIGHT = { 1.0f, 0.0f, 0.0f, 0.0f };
     private static final float[] MATRIX_VECTOR_FORWARD = { 0.0f, 0.0f, -1.0f, 0.0f };
@@ -25,9 +28,9 @@ public final class TransformComponent extends Component {
 
     public TransformComponent(Entity entity) {
         super(entity);
-        this.matrixModel = new float[16];
-        this.matrixRotation = new float[16];
-        this.matrixRotationOutput = new float[4];
+        this.matrixModel = new float[TransformComponent.MATRIX_OUTPUT_DIMENSIONS_COUNT];
+        this.matrixRotation = new float[TransformComponent.MATRIX_OUTPUT_DIMENSIONS_COUNT];
+        this.matrixRotationOutput = new float[TransformComponent.MATRIX_INTERMEDIATE_DIMENSIONS_COUNT];
         this.scale = new Vector3(1.0f, 1.0f, 1.0f);
         this.rotation = new Vector3(0.0f, 0.0f, 0.0f);
         this.position = new Vector3(0.0f, 0.0f, 0.0f);
